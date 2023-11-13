@@ -1,0 +1,34 @@
+.carrousel {
+    margin: 0 100px;
+    height: 415px;
+    position: relative;
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        
+    }
+    &__btnGauche, &__btnDroit {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: transparent;
+        border: none;
+    }
+    &__btnGauche {
+        left: 0;
+    }
+    &__btnDroit {
+        right: 0;
+    }
+    &__nbr {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translate(-50%, 0);
+        color: white;
+        font-size: 18px;
+    }
+}
+
