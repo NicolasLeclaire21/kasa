@@ -1,5 +1,4 @@
 .carrousel {
-    margin: 0 100px;
     height: 415px;
     position: relative;
     &__img {
@@ -17,10 +16,10 @@
         border: none;
     }
     &__btnGauche {
-        left: 0;
+        left: 15px;
     }
     &__btnDroit {
-        right: 0;
+        right: 15px;
     }
     &__nbr {
         position: absolute;
@@ -31,4 +30,17 @@
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .carrousel {
+        height: 255px;
+        &__img {
+            border-radius: 10px;
+        }
+        &__nbr {
+            display: none;
+        }
+    }
+}
+
 

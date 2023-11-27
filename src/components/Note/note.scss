@@ -1,0 +1,14 @@
+.note {
+    width: 196px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .note {
+        width: 98px;
+        svg {
+        width: 18px;
+        }
+    }
+}

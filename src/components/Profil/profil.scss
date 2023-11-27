@@ -1,0 +1,26 @@
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__nom {
+        color: #ff6060;
+        font-size: 18px;
+        max-width: 120px;
+        text-align: right;
+    }
+    &__img {
+        border-radius: 60px;
+        width: 64px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profil__nom {
+        font-size: 12px;
+        max-width: 80px;
+    }
+
+    .profil__img {
+        width: 32px;
+    }
+}
